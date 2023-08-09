@@ -14,6 +14,31 @@
 		4BAEF7E72A80D6380093DF79 /* FeedMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7E62A80D6380093DF79 /* FeedMapTests.swift */; };
 		4BAEF7F12A80D6380093DF79 /* FeedMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7F02A80D6380093DF79 /* FeedMapUITests.swift */; };
 		4BAEF7F32A80D6380093DF79 /* FeedMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7F22A80D6380093DF79 /* FeedMapUITestsLaunchTests.swift */; };
+		4BAEF8012A80D97C0093DF79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF8002A80D97C0093DF79 /* GoogleService-Info.plist */; };
+		4BAEF80D2A8350410093DF79 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4BAEF80C2A8350410093DF79 /* Alamofire */; };
+		4BAEF8102A8350D10093DF79 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BAEF80F2A8350D10093DF79 /* FirebaseAnalytics */; };
+		4BAEF8122A8350D10093DF79 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BAEF8112A8350D10093DF79 /* FirebaseCrashlytics */; };
+		4BAEF8142A8351CE0093DF79 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8132A8351CE0093DF79 /* Defines.swift */; };
+		4BAEF8172A8357E70093DF79 /* SplashV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8162A8357E70093DF79 /* SplashV.swift */; };
+		4BAEF81A2A8359EA0093DF79 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8192A8359EA0093DF79 /* Font+Ext.swift */; };
+		4BAEF81D2A835F420093DF79 /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF81C2A835F420093DF79 /* SplashVM.swift */; };
+		4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF81F2A83689C0093DF79 /* AccessGuideV.swift */; };
+		4BAEF8232A8376030093DF79 /* BlackBTN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8222A8376030093DF79 /* BlackBTN.swift */; };
+		4BAEF8252A83777B0093DF79 /* GrayBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8242A83777B0093DF79 /* GrayBox.swift */; };
+		4BAEF8272A8378610093DF79 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8262A8378610093DF79 /* Color+Ext.swift */; };
+		4BAEF8312A83812B0093DF79 /* NotoSansCJKkr-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF8292A8381270093DF79 /* NotoSansCJKkr-Black.otf */; };
+		4BAEF8322A83812B0093DF79 /* NotoSansCJKkr-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82A2A8381270093DF79 /* NotoSansCJKkr-DemiLight.otf */; };
+		4BAEF8332A83812B0093DF79 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82B2A8381280093DF79 /* LICENSE */; };
+		4BAEF8342A83812B0093DF79 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82C2A8381280093DF79 /* NotoSansCJKkr-Medium.otf */; };
+		4BAEF8352A83812B0093DF79 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82D2A8381290093DF79 /* NotoSansCJKkr-Light.otf */; };
+		4BAEF8362A83812B0093DF79 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82E2A83812A0093DF79 /* NotoSansCJKkr-Regular.otf */; };
+		4BAEF8372A83812B0093DF79 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF82F2A83812A0093DF79 /* NotoSansCJKkr-Bold.otf */; };
+		4BAEF8382A83812B0093DF79 /* NotoSansCJKkr-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF8302A83812B0093DF79 /* NotoSansCJKkr-Thin.otf */; };
+		4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF83A2A83854F0093DF79 /* LocationManager.swift */; };
+		4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */; };
+		4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */; };
+		4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */; };
+		A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		315E07B4A1100285CC7D37F4 /* Pods-FeedMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.release.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap_FeedMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3898A46A96C0C8317D8D175E /* Pods-FeedMap-FeedMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap-FeedMapUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BAEF7D22A80D6360093DF79 /* FeedMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapApp.swift; sourceTree = "<group>"; };
 		4BAEF7D72A80D6360093DF79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +72,32 @@
 		4BAEF7EC2A80D6380093DF79 /* FeedMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAEF7F02A80D6380093DF79 /* FeedMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapUITests.swift; sourceTree = "<group>"; };
 		4BAEF7F22A80D6380093DF79 /* FeedMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BAEF8002A80D97C0093DF79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BAEF8052A80DAE10093DF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAEF8132A8351CE0093DF79 /* Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		4BAEF8162A8357E70093DF79 /* SplashV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashV.swift; sourceTree = "<group>"; };
+		4BAEF8192A8359EA0093DF79 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		4BAEF81C2A835F420093DF79 /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
+		4BAEF81F2A83689C0093DF79 /* AccessGuideV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessGuideV.swift; sourceTree = "<group>"; };
+		4BAEF8222A8376030093DF79 /* BlackBTN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBTN.swift; sourceTree = "<group>"; };
+		4BAEF8242A83777B0093DF79 /* GrayBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBox.swift; sourceTree = "<group>"; };
+		4BAEF8262A8378610093DF79 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		4BAEF8292A8381270093DF79 /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
+		4BAEF82A2A8381270093DF79 /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
+		4BAEF82B2A8381280093DF79 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4BAEF82C2A8381280093DF79 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		4BAEF82D2A8381290093DF79 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
+		4BAEF82E2A83812A0093DF79 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		4BAEF82F2A83812A0093DF79 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		4BAEF8302A83812B0093DF79 /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
+		4BAEF83A2A83854F0093DF79 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessGuideVM.swift; sourceTree = "<group>"; };
+		686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9359BCAB9C981EED65DA868B /* Pods-FeedMap-FeedMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap-FeedMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CCD18344D93A1D5DB5DDC43 /* Pods-FeedMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap.debug.xcconfig"; path = "Target Support Files/Pods-FeedMap/Pods-FeedMap.debug.xcconfig"; sourceTree = "<group>"; };
+		E656DE42716F42794FACC340 /* Pods-FeedMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap.release.xcconfig"; path = "Target Support Files/Pods-FeedMap/Pods-FeedMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */,
+				4BAEF8122A8350D10093DF79 /* FirebaseCrashlytics in Frameworks */,
+				4BAEF80D2A8350410093DF79 /* Alamofire in Frameworks */,
+				4BAEF8102A8350D10093DF79 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +138,8 @@
 				4BAEF7E52A80D6380093DF79 /* FeedMapTests */,
 				4BAEF7EF2A80D6380093DF79 /* FeedMapUITests */,
 				4BAEF7D32A80D6360093DF79 /* Products */,
+				9723826B77955429C38A18F8 /* Pods */,
+				CEC48597F30AA81B0CE04B19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +156,9 @@
 		4BAEF7D42A80D6360093DF79 /* FeedMap */ = {
 			isa = PBXGroup;
 			children = (
-				4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */,
-				4BAEF7D72A80D6360093DF79 /* ContentView.swift */,
-				4BAEF7D92A80D6380093DF79 /* Assets.xcassets */,
+				4BAEF8062A80E0F10093DF79 /* Common */,
+				4BAEF8072A80E0FD0093DF79 /* Page */,
+				4BAEF7FF2A80D9600093DF79 /* Supporting Files */,
 				4BAEF7DB2A80D6380093DF79 /* Preview Content */,
 			);
 			path = FeedMap;
@@ -127,6 +189,153 @@
 			path = FeedMapUITests;
 			sourceTree = "<group>";
 		};
+		4BAEF7FF2A80D9600093DF79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8052A80DAE10093DF79 /* Info.plist */,
+				4BAEF8022A80D99B0093DF79 /* Resource */,
+				4BAEF7D92A80D6380093DF79 /* Assets.xcassets */,
+				4BAEF8002A80D97C0093DF79 /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BAEF8022A80D99B0093DF79 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8282A8381150093DF79 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4BAEF8062A80E0F10093DF79 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8392A83853B0093DF79 /* Managers */,
+				4BAEF8212A8375CA0093DF79 /* Views */,
+				4BAEF8182A8359D90093DF79 /* Extensions */,
+				4BAEF8132A8351CE0093DF79 /* Defines.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4BAEF8072A80E0FD0093DF79 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF81E2A83688C0093DF79 /* AccessGuide */,
+				4BAEF8152A8356EC0093DF79 /* Splash */,
+				4BAEF8082A80E1180093DF79 /* Launch */,
+				4BAEF7D72A80D6360093DF79 /* ContentView.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		4BAEF8082A80E1180093DF79 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		4BAEF8152A8356EC0093DF79 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF81B2A835F380093DF79 /* VM */,
+				4BAEF8162A8357E70093DF79 /* SplashV.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4BAEF8182A8359D90093DF79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8192A8359EA0093DF79 /* Font+Ext.swift */,
+				4BAEF8262A8378610093DF79 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4BAEF81B2A835F380093DF79 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF81C2A835F420093DF79 /* SplashVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		4BAEF81E2A83688C0093DF79 /* AccessGuide */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF83C2A8389020093DF79 /* VM */,
+				4BAEF81F2A83689C0093DF79 /* AccessGuideV.swift */,
+			);
+			path = AccessGuide;
+			sourceTree = "<group>";
+		};
+		4BAEF8212A8375CA0093DF79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8222A8376030093DF79 /* BlackBTN.swift */,
+				4BAEF8242A83777B0093DF79 /* GrayBox.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BAEF8282A8381150093DF79 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF82B2A8381280093DF79 /* LICENSE */,
+				4BAEF8292A8381270093DF79 /* NotoSansCJKkr-Black.otf */,
+				4BAEF82F2A83812A0093DF79 /* NotoSansCJKkr-Bold.otf */,
+				4BAEF82A2A8381270093DF79 /* NotoSansCJKkr-DemiLight.otf */,
+				4BAEF82D2A8381290093DF79 /* NotoSansCJKkr-Light.otf */,
+				4BAEF82C2A8381280093DF79 /* NotoSansCJKkr-Medium.otf */,
+				4BAEF82E2A83812A0093DF79 /* NotoSansCJKkr-Regular.otf */,
+				4BAEF8302A83812B0093DF79 /* NotoSansCJKkr-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BAEF8392A83853B0093DF79 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF83A2A83854F0093DF79 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4BAEF83C2A8389020093DF79 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		9723826B77955429C38A18F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CCD18344D93A1D5DB5DDC43 /* Pods-FeedMap.debug.xcconfig */,
+				E656DE42716F42794FACC340 /* Pods-FeedMap.release.xcconfig */,
+				9359BCAB9C981EED65DA868B /* Pods-FeedMap-FeedMapUITests.debug.xcconfig */,
+				3898A46A96C0C8317D8D175E /* Pods-FeedMap-FeedMapUITests.release.xcconfig */,
+				81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */,
+				315E07B4A1100285CC7D37F4 /* Pods-FeedMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEC48597F30AA81B0CE04B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */,
+				33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */,
+				8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +343,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BAEF7F62A80D6380093DF79 /* Build configuration list for PBXNativeTarget "FeedMap" */;
 			buildPhases = (
+				A69ACCC57443B4C2C679A987 /* [CP] Check Pods Manifest.lock */,
 				4BAEF7CE2A80D6360093DF79 /* Sources */,
 				4BAEF7CF2A80D6360093DF79 /* Frameworks */,
 				4BAEF7D02A80D6360093DF79 /* Resources */,
+				E9C4FBF59BE486B69EB134B4 /* [CP] Embed Pods Frameworks */,
+				71D3044D2AFE9E1BA33D5755 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FeedMap;
+			packageProductDependencies = (
+				4BAEF80C2A8350410093DF79 /* Alamofire */,
+				4BAEF80F2A8350D10093DF79 /* FirebaseAnalytics */,
+				4BAEF8112A8350D10093DF79 /* FirebaseCrashlytics */,
+			);
 			productName = FeedMap;
 			productReference = 4BAEF7D22A80D6360093DF79 /* FeedMap.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BAEF7F92A80D6380093DF79 /* Build configuration list for PBXNativeTarget "FeedMapTests" */;
 			buildPhases = (
+				1FCAEEC054988E7108DFA36B /* [CP] Check Pods Manifest.lock */,
 				4BAEF7DE2A80D6380093DF79 /* Sources */,
 				4BAEF7DF2A80D6380093DF79 /* Frameworks */,
 				4BAEF7E02A80D6380093DF79 /* Resources */,
@@ -169,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BAEF7FC2A80D6380093DF79 /* Build configuration list for PBXNativeTarget "FeedMapUITests" */;
 			buildPhases = (
+				259C7F3E5AE3C2F203FB889C /* [CP] Check Pods Manifest.lock */,
 				4BAEF7E82A80D6380093DF79 /* Sources */,
 				4BAEF7E92A80D6380093DF79 /* Frameworks */,
 				4BAEF7EA2A80D6380093DF79 /* Resources */,
+				43B7D2E773AE97F59611CFF7 /* [CP] Embed Pods Frameworks */,
+				3D4847ABF799FC5210A3FEAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +436,10 @@
 				Base,
 			);
 			mainGroup = 4BAEF7C92A80D6360093DF79;
+			packageReferences = (
+				4BAEF80B2A8350410093DF79 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4BAEF7D32A80D6360093DF79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +456,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BAEF8332A83812B0093DF79 /* LICENSE in Resources */,
+				4BAEF8372A83812B0093DF79 /* NotoSansCJKkr-Bold.otf in Resources */,
+				4BAEF8342A83812B0093DF79 /* NotoSansCJKkr-Medium.otf in Resources */,
 				4BAEF7DD2A80D6380093DF79 /* Preview Assets.xcassets in Resources */,
 				4BAEF7DA2A80D6380093DF79 /* Assets.xcassets in Resources */,
+				4BAEF8362A83812B0093DF79 /* NotoSansCJKkr-Regular.otf in Resources */,
+				4BAEF8312A83812B0093DF79 /* NotoSansCJKkr-Black.otf in Resources */,
+				4BAEF8352A83812B0093DF79 /* NotoSansCJKkr-Light.otf in Resources */,
+				4BAEF8012A80D97C0093DF79 /* GoogleService-Info.plist in Resources */,
+				4BAEF8322A83812B0093DF79 /* NotoSansCJKkr-DemiLight.otf in Resources */,
+				4BAEF8382A83812B0093DF79 /* NotoSansCJKkr-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +486,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FCAEEC054988E7108DFA36B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeedMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		259C7F3E5AE3C2F203FB889C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeedMap-FeedMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4847ABF799FC5210A3FEAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B7D2E773AE97F59611CFF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D3044D2AFE9E1BA33D5755 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69ACCC57443B4C2C679A987 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeedMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C4FBF59BE486B69EB134B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeedMap/Pods-FeedMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BAEF7CE2A80D6360093DF79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4BAEF7D82A80D6360093DF79 /* ContentView.swift in Sources */,
+				4BAEF81A2A8359EA0093DF79 /* Font+Ext.swift in Sources */,
+				4BAEF8232A8376030093DF79 /* BlackBTN.swift in Sources */,
+				4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */,
+				4BAEF8142A8351CE0093DF79 /* Defines.swift in Sources */,
+				4BAEF8172A8357E70093DF79 /* SplashV.swift in Sources */,
+				4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */,
+				4BAEF8272A8378610093DF79 /* Color+Ext.swift in Sources */,
+				4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */,
+				4BAEF81D2A835F420093DF79 /* SplashVM.swift in Sources */,
+				4BAEF8252A83777B0093DF79 /* GrayBox.swift in Sources */,
 				4BAEF7D62A80D6360093DF79 /* FeedMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +792,7 @@
 		};
 		4BAEF7F72A80D6380093DF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCD18344D93A1D5DB5DDC43 /* Pods-FeedMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,12 +802,20 @@
 				DEVELOPMENT_TEAM = PQADV43RTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FeedMap/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FeedMAP;
+				INFOPLIST_KEY_NSCameraUsageDescription = "피드 및 프로필 등록 서비스를 이용하기 위해 사진 업로드를 위한 카메라 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "피드 및 프로필 등록 서비스를 이용하기 위해 사진 업로드를 위한 갤러리 권한이 필요합니다.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "FeedMAP이 사용자 맞춤 정보를 제공하기 위해 광고추적 허용이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,14 +823,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.isac.FeedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4BAEF7F82A80D6380093DF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E656DE42716F42794FACC340 /* Pods-FeedMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,12 +844,20 @@
 				DEVELOPMENT_TEAM = PQADV43RTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FeedMap/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FeedMAP;
+				INFOPLIST_KEY_NSCameraUsageDescription = "피드 및 프로필 등록 서비스를 이용하기 위해 사진 업로드를 위한 카메라 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 서비스에 현재위치 및 피드 등록을 위한 주소검색 서비스를 위해 위치 정보 접근권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "피드 및 프로필 등록 서비스를 이용하기 위해 사진 업로드를 위한 갤러리 권한이 필요합니다.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "FeedMAP이 사용자 맞춤 정보를 제공하기 위해 광고추적 허용이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,14 +865,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.isac.FeedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4BAEF7FA2A80D6380093DF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +897,7 @@
 		};
 		4BAEF7FB2A80D6380093DF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315E07B4A1100285CC7D37F4 /* Pods-FeedMapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +918,7 @@
 		};
 		4BAEF7FD2A80D6380093DF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9359BCAB9C981EED65DA868B /* Pods-FeedMap-FeedMapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +937,7 @@
 		};
 		4BAEF7FE2A80D6380093DF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3898A46A96C0C8317D8D175E /* Pods-FeedMap-FeedMapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +994,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BAEF80B2A8350410093DF79 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BAEF80C2A8350410093DF79 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BAEF80B2A8350410093DF79 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4BAEF80F2A8350D10093DF79 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4BAEF8112A8350D10093DF79 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BAEF7CA2A80D6360093DF79 /* Project object */;
 }
