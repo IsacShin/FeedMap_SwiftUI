@@ -5,7 +5,7 @@ target 'FeedMap' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-#UI관련
+    #UI관련
     pod 'SnapKit'
     pod 'Hex'
     pod 'iProgressHUD'

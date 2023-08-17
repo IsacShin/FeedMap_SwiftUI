@@ -35,7 +35,8 @@ struct CommonTabV: View {
                     Text("Feed")
                 }
                 .tag(TabType.FEED)
-            Color.green
+            
+            MyPageV()
                 .tabItem {
                     Image(systemName: "person")
                     Text("My")
@@ -49,5 +50,7 @@ struct CommonTabV: View {
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         CommonTabV()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
+            .previewDisplayName("iPhone 13 Pro")
     }
 }

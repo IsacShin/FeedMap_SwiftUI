@@ -29,3 +29,13 @@ let DARK_COLOR = Color(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blu
 // MARK: - Shortcut
 /// UserDefaults.standard
 let UDF = UserDefaults.standard
+
+// MARK: - Device 관련
+let DEVICE                  = UIDevice.current
+let APP_VER                 = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.0.0"
+let DEVICE_TYPE             = "IOS"
+let DEVICE_MODEL            = "\(DEVICE.model)\(DEVICE.name)"
+let DEVICE_ID               = UIDevice.current.identifierForVendor?.uuidString
+let APP_ID                  = Bundle.main.bundleIdentifier ?? "com.isac.myreview"
+let DEVICE_VERSION          = "\(DEVICE.systemVersion)"
+let APP_NAME                = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? ""

@@ -39,6 +39,13 @@
 		4BAEF8452A8C8D510093DF79 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */; };
 		4BAEF8472A8C9C4A0093DF79 /* NaviManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */; };
 		4BAEF84A2A8CABA40093DF79 /* MyPageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8492A8CABA40093DF79 /* MyPageV.swift */; };
+		4BAEF84D2A8DE7130093DF79 /* TermsV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF84C2A8DE7130093DF79 /* TermsV.swift */; };
+		4BAEF84F2A8DF1040093DF79 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF84E2A8DF1040093DF79 /* UINavigationController+Ext.swift */; };
+		4BAEF8522A8DF2D30093DF79 /* CommonWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8512A8DF2D30093DF79 /* CommonWebView.swift */; };
+		4BAEF8552A8DFA0F0093DF79 /* CommonWebVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8542A8DFA0F0093DF79 /* CommonWebVM.swift */; };
+		4BAEF8572A8E05860093DF79 /* CommonWebV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8562A8E05860093DF79 /* CommonWebV.swift */; };
+		4BAEF85D2A8E126C0093DF79 /* CommonLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF85C2A8E126C0093DF79 /* CommonLoadingIndicator.swift */; };
+		4BAEF85F2A8E14760093DF79 /* CommonLoadingV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF85E2A8E14760093DF79 /* CommonLoadingV.swift */; };
 		4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */; };
 		4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */; };
 		A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */; };
@@ -98,6 +105,13 @@
 		4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviManager.swift; sourceTree = "<group>"; };
 		4BAEF8492A8CABA40093DF79 /* MyPageV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageV.swift; sourceTree = "<group>"; };
+		4BAEF84C2A8DE7130093DF79 /* TermsV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsV.swift; sourceTree = "<group>"; };
+		4BAEF84E2A8DF1040093DF79 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		4BAEF8512A8DF2D30093DF79 /* CommonWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWebView.swift; sourceTree = "<group>"; };
+		4BAEF8542A8DFA0F0093DF79 /* CommonWebVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWebVM.swift; sourceTree = "<group>"; };
+		4BAEF8562A8E05860093DF79 /* CommonWebV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWebV.swift; sourceTree = "<group>"; };
+		4BAEF85C2A8E126C0093DF79 /* CommonLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLoadingIndicator.swift; sourceTree = "<group>"; };
+		4BAEF85E2A8E14760093DF79 /* CommonLoadingV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLoadingV.swift; sourceTree = "<group>"; };
 		686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				4BAEF8482A8CAB8F0093DF79 /* MyPage */,
-				4BAEF83F2A8C6F370093DF79 /* TabView */,
 				4BAEF81E2A83688C0093DF79 /* AccessGuide */,
 				4BAEF8152A8356EC0093DF79 /* Splash */,
 				4BAEF8082A80E1180093DF79 /* Launch */,
@@ -260,6 +273,7 @@
 				4BAEF8192A8359EA0093DF79 /* Font+Ext.swift */,
 				4BAEF8262A8378610093DF79 /* Color+Ext.swift */,
 				4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */,
+				4BAEF84E2A8DF1040093DF79 /* UINavigationController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +298,9 @@
 		4BAEF8212A8375CA0093DF79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4BAEF85B2A8E12550093DF79 /* LoadingView */,
+				4BAEF8502A8DF2870093DF79 /* WebView */,
+				4BAEF83F2A8C6F370093DF79 /* TabView */,
 				4BAEF8222A8376030093DF79 /* BlackBTN.swift */,
 				4BAEF8242A83777B0093DF79 /* GrayBox.swift */,
 			);
@@ -333,9 +350,45 @@
 		4BAEF8482A8CAB8F0093DF79 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				4BAEF84B2A8DE6F30093DF79 /* Terms */,
 				4BAEF8492A8CABA40093DF79 /* MyPageV.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		4BAEF84B2A8DE6F30093DF79 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF84C2A8DE7130093DF79 /* TermsV.swift */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		4BAEF8502A8DF2870093DF79 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8532A8DFA030093DF79 /* VM */,
+				4BAEF8512A8DF2D30093DF79 /* CommonWebView.swift */,
+				4BAEF8562A8E05860093DF79 /* CommonWebV.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		4BAEF8532A8DFA030093DF79 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8542A8DFA0F0093DF79 /* CommonWebVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		4BAEF85B2A8E12550093DF79 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF85C2A8E126C0093DF79 /* CommonLoadingIndicator.swift */,
+				4BAEF85E2A8E14760093DF79 /* CommonLoadingV.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		9723826B77955429C38A18F8 /* Pods */ = {
@@ -655,15 +708,22 @@
 			files = (
 				4BAEF81A2A8359EA0093DF79 /* Font+Ext.swift in Sources */,
 				4BAEF8232A8376030093DF79 /* BlackBTN.swift in Sources */,
+				4BAEF85F2A8E14760093DF79 /* CommonLoadingV.swift in Sources */,
+				4BAEF8522A8DF2D30093DF79 /* CommonWebView.swift in Sources */,
 				4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */,
 				4BAEF8142A8351CE0093DF79 /* Defines.swift in Sources */,
 				4BAEF8172A8357E70093DF79 /* SplashV.swift in Sources */,
 				4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */,
 				4BAEF8272A8378610093DF79 /* Color+Ext.swift in Sources */,
 				4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */,
+				4BAEF84D2A8DE7130093DF79 /* TermsV.swift in Sources */,
+				4BAEF8572A8E05860093DF79 /* CommonWebV.swift in Sources */,
+				4BAEF84F2A8DF1040093DF79 /* UINavigationController+Ext.swift in Sources */,
 				4BAEF84A2A8CABA40093DF79 /* MyPageV.swift in Sources */,
 				4BAEF81D2A835F420093DF79 /* SplashVM.swift in Sources */,
 				4BAEF8472A8C9C4A0093DF79 /* NaviManager.swift in Sources */,
+				4BAEF8552A8DFA0F0093DF79 /* CommonWebVM.swift in Sources */,
+				4BAEF85D2A8E126C0093DF79 /* CommonLoadingIndicator.swift in Sources */,
 				4BAEF8452A8C8D510093DF79 /* UIApplication+Ext.swift in Sources */,
 				4BAEF8252A83777B0093DF79 /* GrayBox.swift in Sources */,
 				4BAEF8412A8C6F5A0093DF79 /* CommonTabV.swift in Sources */,

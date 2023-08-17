@@ -39,11 +39,14 @@ struct FeedMapApp: App {
                 SplashV()
                     .id(appState.rootViewId)
                     .environmentObject(appState)
+                    .dynamicTypeSize(.small)
             } else {
                 CommonTabV()
                     .id(appState.rootViewId)
                     .environmentObject(appState)
+                    .dynamicTypeSize(.small)
             }
         }
+        
     }
 }
