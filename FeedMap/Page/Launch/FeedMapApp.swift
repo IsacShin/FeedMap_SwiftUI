@@ -6,14 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 import Firebase
 import GoogleMobileAds
 import GoogleMaps
 import GooglePlaces
 
+enum RootViewType {
+    case Splash
+    case CommonTabView
+}
+
+final class AppState : ObservableObject {
+    @Published var rootViewId: RootViewType = .Splash
+}
+
 @main
 struct FeedMapApp: App {
-
+    @ObservedObject var appState = AppState()
+    
     init() {
         // 설정 초기화
         FirebaseApp.configure()
@@ -24,7 +35,15 @@ struct FeedMapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashV()
+            if appState.rootViewId == .Splash {
+                SplashV()
+                    .id(appState.rootViewId)
+                    .environmentObject(appState)
+            } else {
+                CommonTabV()
+                    .id(appState.rootViewId)
+                    .environmentObject(appState)
+            }
         }
     }
 }

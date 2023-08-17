@@ -11,7 +11,9 @@ import Photos
 
 struct AccessGuideV: View {
     
+    @EnvironmentObject var appState: AppState
     @ObservedObject var vm = AccessGuideVM()
+    @Binding var isGuideShow: Bool
     
     var body: some View {
         ZStack {
@@ -67,7 +69,16 @@ struct AccessGuideV: View {
         }
         .onReceive(self.vm.success) { result in
             if result {
-                print("페이지 이동")
+                DispatchQueue.main.async {
+                    self.isGuideShow = false
+                    UDF.set(true, forKey: "firstLaunch")
+                    NaviManager.popToRootView {
+                        withAnimation {
+                            appState.rootViewId = .CommonTabView
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -98,6 +109,6 @@ struct AccessElementV: View {
 
 struct AccessGuideV_Previews: PreviewProvider {
     static var previews: some View {
-        AccessGuideV()
+        AccessGuideV(isGuideShow: .constant(true))
     }
 }

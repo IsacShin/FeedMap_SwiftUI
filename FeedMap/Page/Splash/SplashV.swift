@@ -18,6 +18,8 @@ struct SplashV: View {
     @State var isAnim = false
     @State var isGuideShow = false
     
+    @EnvironmentObject var appState: AppState
+    
     var body: some View {
         ZStack {
             DARK_COLOR
@@ -61,7 +63,11 @@ struct SplashV: View {
                 case .firstLaunch:
                     self.isGuideShow = true
                 case .yetLaunch:
-                    print("이미 설치됨")
+                    NaviManager.popToRootView {
+                        withAnimation {
+                            appState.rootViewId = .CommonTabView
+                        }
+                    }
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
@@ -80,7 +86,7 @@ struct SplashV: View {
             }
                 }
         .fullScreenCover(isPresented: $isGuideShow) {
-            AccessGuideV()
+            AccessGuideV(isGuideShow: $isGuideShow)
         }
     }
 }

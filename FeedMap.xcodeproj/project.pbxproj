@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4BAEF7D62A80D6360093DF79 /* FeedMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */; };
-		4BAEF7D82A80D6360093DF79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7D72A80D6360093DF79 /* ContentView.swift */; };
 		4BAEF7DA2A80D6380093DF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF7D92A80D6380093DF79 /* Assets.xcassets */; };
 		4BAEF7DD2A80D6380093DF79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF7DC2A80D6380093DF79 /* Preview Assets.xcassets */; };
 		4BAEF7E72A80D6380093DF79 /* FeedMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7E62A80D6380093DF79 /* FeedMapTests.swift */; };
@@ -36,6 +35,10 @@
 		4BAEF8382A83812B0093DF79 /* NotoSansCJKkr-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF8302A83812B0093DF79 /* NotoSansCJKkr-Thin.otf */; };
 		4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF83A2A83854F0093DF79 /* LocationManager.swift */; };
 		4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */; };
+		4BAEF8412A8C6F5A0093DF79 /* CommonTabV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8402A8C6F5A0093DF79 /* CommonTabV.swift */; };
+		4BAEF8452A8C8D510093DF79 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */; };
+		4BAEF8472A8C9C4A0093DF79 /* NaviManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */; };
+		4BAEF84A2A8CABA40093DF79 /* MyPageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8492A8CABA40093DF79 /* MyPageV.swift */; };
 		4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */; };
 		4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */; };
 		A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */; };
@@ -64,7 +67,6 @@
 		3898A46A96C0C8317D8D175E /* Pods-FeedMap-FeedMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap-FeedMapUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BAEF7D22A80D6360093DF79 /* FeedMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapApp.swift; sourceTree = "<group>"; };
-		4BAEF7D72A80D6360093DF79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BAEF7D92A80D6380093DF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BAEF7DC2A80D6380093DF79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BAEF7E22A80D6380093DF79 /* FeedMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,10 @@
 		4BAEF8302A83812B0093DF79 /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
 		4BAEF83A2A83854F0093DF79 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessGuideVM.swift; sourceTree = "<group>"; };
+		4BAEF8402A8C6F5A0093DF79 /* CommonTabV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabV.swift; sourceTree = "<group>"; };
+		4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviManager.swift; sourceTree = "<group>"; };
+		4BAEF8492A8CABA40093DF79 /* MyPageV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageV.swift; sourceTree = "<group>"; };
 		686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,10 +228,11 @@
 		4BAEF8072A80E0FD0093DF79 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				4BAEF8482A8CAB8F0093DF79 /* MyPage */,
+				4BAEF83F2A8C6F370093DF79 /* TabView */,
 				4BAEF81E2A83688C0093DF79 /* AccessGuide */,
 				4BAEF8152A8356EC0093DF79 /* Splash */,
 				4BAEF8082A80E1180093DF79 /* Launch */,
-				4BAEF7D72A80D6360093DF79 /* ContentView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			children = (
 				4BAEF8192A8359EA0093DF79 /* Font+Ext.swift */,
 				4BAEF8262A8378610093DF79 /* Color+Ext.swift */,
+				4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				4BAEF83A2A83854F0093DF79 /* LocationManager.swift */,
+				4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -311,6 +320,22 @@
 				4BAEF83D2A8389110093DF79 /* AccessGuideVM.swift */,
 			);
 			path = VM;
+			sourceTree = "<group>";
+		};
+		4BAEF83F2A8C6F370093DF79 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8402A8C6F5A0093DF79 /* CommonTabV.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		4BAEF8482A8CAB8F0093DF79 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				4BAEF8492A8CABA40093DF79 /* MyPageV.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		9723826B77955429C38A18F8 /* Pods */ = {
@@ -628,7 +653,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAEF7D82A80D6360093DF79 /* ContentView.swift in Sources */,
 				4BAEF81A2A8359EA0093DF79 /* Font+Ext.swift in Sources */,
 				4BAEF8232A8376030093DF79 /* BlackBTN.swift in Sources */,
 				4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */,
@@ -637,8 +661,12 @@
 				4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */,
 				4BAEF8272A8378610093DF79 /* Color+Ext.swift in Sources */,
 				4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */,
+				4BAEF84A2A8CABA40093DF79 /* MyPageV.swift in Sources */,
 				4BAEF81D2A835F420093DF79 /* SplashVM.swift in Sources */,
+				4BAEF8472A8C9C4A0093DF79 /* NaviManager.swift in Sources */,
+				4BAEF8452A8C8D510093DF79 /* UIApplication+Ext.swift in Sources */,
 				4BAEF8252A83777B0093DF79 /* GrayBox.swift in Sources */,
+				4BAEF8412A8C6F5A0093DF79 /* CommonTabV.swift in Sources */,
 				4BAEF7D62A80D6360093DF79 /* FeedMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
