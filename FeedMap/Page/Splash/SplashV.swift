@@ -15,11 +15,10 @@ struct SplashV: View {
     }
     
     @ObservedObject var vm: SplashVM = SplashVM()
+    @EnvironmentObject var appVM: AppVM
     @State var isAnim = false
     @State var isGuideShow = false
-    
-    @EnvironmentObject var appState: AppState
-    
+        
     var body: some View {
         ZStack {
             DARK_COLOR
@@ -65,7 +64,7 @@ struct SplashV: View {
                 case .yetLaunch:
                     NaviManager.popToRootView {
                         withAnimation {
-                            appState.rootViewId = .CommonTabView
+                            appVM.rootViewId = .CommonTabView
                         }
                     }
             }

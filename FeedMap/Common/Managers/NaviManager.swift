@@ -9,8 +9,6 @@ import Foundation
 import SwiftUI
 
 struct NaviManager {
-    @Environment(\.presentationMode) static var presentationMode
-    
     static func popToRootView(completion: (() -> Void)? = nil) {
         let keyWindow = UIApplication.shared.connectedScenes
             .filter({$0.activationState == .foregroundActive})
@@ -25,12 +23,12 @@ struct NaviManager {
         
     }
     
-    static func popViewController(completion: @escaping () -> Void) {
+    static func popViewController(handler: () -> Void ,completion: @escaping () -> Void) {
         
         CATransaction.begin()
         CATransaction.setCompletionBlock(completion)
         
-        NaviManager.presentationMode.wrappedValue.dismiss()
+        handler()
         
         CATransaction.commit()
     }

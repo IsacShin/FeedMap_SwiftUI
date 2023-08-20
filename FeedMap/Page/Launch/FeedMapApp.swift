@@ -17,13 +17,13 @@ enum RootViewType {
     case CommonTabView
 }
 
-final class AppState : ObservableObject {
+final class AppVM: ObservableObject {
     @Published var rootViewId: RootViewType = .Splash
 }
 
 @main
 struct FeedMapApp: App {
-    @ObservedObject var appState = AppState()
+    @ObservedObject var vm = AppVM()
     
     init() {
         // 설정 초기화
@@ -35,15 +35,15 @@ struct FeedMapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if appState.rootViewId == .Splash {
+            if vm.rootViewId == .Splash {
                 SplashV()
-                    .id(appState.rootViewId)
-                    .environmentObject(appState)
+                    .id(vm.rootViewId)
+                    .environmentObject(vm)
                     .dynamicTypeSize(.small)
             } else {
                 CommonTabV()
-                    .id(appState.rootViewId)
-                    .environmentObject(appState)
+                    .id(vm.rootViewId)
+                    .environmentObject(vm)
                     .dynamicTypeSize(.small)
             }
         }

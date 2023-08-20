@@ -28,6 +28,7 @@ class RefreshControlHelper: NSObject {
 struct CommonWebView: UIViewRepresentable {
     
     @ObservedObject var vm: CommonWebVM
+    
     var rfcHelper = RefreshControlHelper()
     var urlStr: String
     
@@ -81,7 +82,8 @@ struct CommonWebView: UIViewRepresentable {
     class Coordinator: NSObject {
         var webV: CommonWebView
         var subscriptions = Set<AnyCancellable>()
-        
+        @Environment(\.presentationMode) private var presentationMode
+
         init(_ webV: CommonWebView) {
             self.webV = webV
         }
@@ -168,8 +170,9 @@ extension CommonWebView.Coordinator: WKScriptMessageHandler {
                     .post(name: Notification.Name("addrInfo"),
                           object: nil,
                           userInfo: userInfo)
+            } completion: {
+                self.presentationMode.wrappedValue.dismiss()
             }
-            
         }
     }
 }

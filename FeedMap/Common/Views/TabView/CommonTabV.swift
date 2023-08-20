@@ -19,38 +19,51 @@ struct CommonTabV: View {
     }
     
     @State var selectTab: TabType = .MAP
+    @State var isLogin = AppManager.isLoggedIn()
     
     var body: some View {
-        TabView(selection: $selectTab) {
-            Color.red
-                .tabItem {
-                    Image(systemName: "map")
-                    Text("Map")
-                }
-                .tag(TabType.MAP)
-                
-            Color.yellow
-                .tabItem {
-                    Image(systemName: "list.bullet.below.rectangle")
-                    Text("Feed")
-                }
-                .tag(TabType.FEED)
-            
-            MyPageV()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("My")
-                }
-                .tag(TabType.MYPAGE)
+        
+        if isLogin {
+            TabView(selection: $selectTab) {
+                Color.red
+                    .tabItem {
+                        Image(systemName: "map")
+                        Text("Map")
+                    }
+                    .tag(TabType.MAP)
+
+                Color.yellow
+                    .tabItem {
+                        Image(systemName: "list.bullet.below.rectangle")
+                        Text("Feed")
+                    }
+                    .tag(TabType.FEED)
+
+                MyPageV(selectTab: $selectTab)
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("My")
+                    }
+                    .tag(TabType.MYPAGE)
+            }
+            .tint(.white)
+            .onReceive(AppManager.isLogin) {
+                isLogin = $0
+            }
+        } else {
+            withAnimation {
+                LoginV()
+                    .transition(.move(edge: .bottom))
+                    .onReceive(AppManager.isLogin) {
+                        isLogin = $0
+                    }
+            }
         }
-        .tint(.white)
     }
 }
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         CommonTabV()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
-            .previewDisplayName("iPhone 13 Pro")
     }
 }

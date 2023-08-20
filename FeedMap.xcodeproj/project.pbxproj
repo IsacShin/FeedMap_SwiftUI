@@ -46,6 +46,20 @@
 		4BAEF8572A8E05860093DF79 /* CommonWebV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8562A8E05860093DF79 /* CommonWebV.swift */; };
 		4BAEF85D2A8E126C0093DF79 /* CommonLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF85C2A8E126C0093DF79 /* CommonLoadingIndicator.swift */; };
 		4BAEF85F2A8E14760093DF79 /* CommonLoadingV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF85E2A8E14760093DF79 /* CommonLoadingV.swift */; };
+		4BAEF8612A8E55BE0093DF79 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8602A8E55BE0093DF79 /* AppManager.swift */; };
+		4BAEF8652A8E5F3E0093DF79 /* LoginV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF8642A8E5F3E0093DF79 /* LoginV.swift */; };
+		4BE8C6262A8F2F1B00A67808 /* idLoginV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6252A8F2F1B00A67808 /* idLoginV.swift */; };
+		4BE8C6292A8F30E200A67808 /* FloatingLabelTextFieldSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BE8C6282A8F30E200A67808 /* FloatingLabelTextFieldSwiftUI */; };
+		4BE8C62B2A8F39F900A67808 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C62A2A8F39F900A67808 /* KeyboardManager.swift */; };
+		4BE8C62D2A8F41DC00A67808 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C62C2A8F41DC00A67808 /* LoginVM.swift */; };
+		4BE8C62F2A8F481D00A67808 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C62E2A8F481D00A67808 /* String+Ext.swift */; };
+		4BE8C6322A90588D00A67808 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6312A90588D00A67808 /* ApiClient.swift */; };
+		4BE8C6342A90F26A00A67808 /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6332A90F26A00A67808 /* ApiLogger.swift */; };
+		4BE8C6362A90F4F400A67808 /* Notification.Name+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6352A90F4F400A67808 /* Notification.Name+Ext.swift */; };
+		4BE8C6392A90FAF500A67808 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6382A90FAF500A67808 /* BaseInterceptor.swift */; };
+		4BE8C63E2A90FF4B00A67808 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C63D2A90FF4B00A67808 /* LoginRouter.swift */; };
+		4BE8C6402A91074E00A67808 /* LoginApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C63F2A91074E00A67808 /* LoginApiService.swift */; };
+		4BE8C6432A9107D900A67808 /* UserListRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6422A9107D900A67808 /* UserListRawData.swift */; };
 		4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */; };
 		4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */; };
 		A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */; };
@@ -112,6 +126,19 @@
 		4BAEF8562A8E05860093DF79 /* CommonWebV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWebV.swift; sourceTree = "<group>"; };
 		4BAEF85C2A8E126C0093DF79 /* CommonLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLoadingIndicator.swift; sourceTree = "<group>"; };
 		4BAEF85E2A8E14760093DF79 /* CommonLoadingV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLoadingV.swift; sourceTree = "<group>"; };
+		4BAEF8602A8E55BE0093DF79 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		4BAEF8642A8E5F3E0093DF79 /* LoginV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginV.swift; sourceTree = "<group>"; };
+		4BE8C6252A8F2F1B00A67808 /* idLoginV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idLoginV.swift; sourceTree = "<group>"; };
+		4BE8C62A2A8F39F900A67808 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		4BE8C62C2A8F41DC00A67808 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		4BE8C62E2A8F481D00A67808 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		4BE8C6312A90588D00A67808 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		4BE8C6332A90F26A00A67808 /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
+		4BE8C6352A90F4F400A67808 /* Notification.Name+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Ext.swift"; sourceTree = "<group>"; };
+		4BE8C6382A90FAF500A67808 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		4BE8C63D2A90FF4B00A67808 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4BE8C63F2A91074E00A67808 /* LoginApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApiService.swift; sourceTree = "<group>"; };
+		4BE8C6422A9107D900A67808 /* UserListRawData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRawData.swift; sourceTree = "<group>"; };
 		686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +154,7 @@
 			files = (
 				4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */,
 				4BAEF8122A8350D10093DF79 /* FirebaseCrashlytics in Frameworks */,
+				4BE8C6292A8F30E200A67808 /* FloatingLabelTextFieldSwiftUI in Frameworks */,
 				4BAEF80D2A8350410093DF79 /* Alamofire in Frameworks */,
 				4BAEF8102A8350D10093DF79 /* FirebaseAnalytics in Frameworks */,
 			);
@@ -231,6 +259,7 @@
 		4BAEF8062A80E0F10093DF79 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4BE8C6302A9053AA00A67808 /* API */,
 				4BAEF8392A83853B0093DF79 /* Managers */,
 				4BAEF8212A8375CA0093DF79 /* Views */,
 				4BAEF8182A8359D90093DF79 /* Extensions */,
@@ -242,6 +271,7 @@
 		4BAEF8072A80E0FD0093DF79 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				4BAEF8622A8E5CD80093DF79 /* Login */,
 				4BAEF8482A8CAB8F0093DF79 /* MyPage */,
 				4BAEF81E2A83688C0093DF79 /* AccessGuide */,
 				4BAEF8152A8356EC0093DF79 /* Splash */,
@@ -274,6 +304,8 @@
 				4BAEF8262A8378610093DF79 /* Color+Ext.swift */,
 				4BAEF8442A8C8D510093DF79 /* UIApplication+Ext.swift */,
 				4BAEF84E2A8DF1040093DF79 /* UINavigationController+Ext.swift */,
+				4BE8C62E2A8F481D00A67808 /* String+Ext.swift */,
+				4BE8C6352A90F4F400A67808 /* Notification.Name+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +359,8 @@
 			children = (
 				4BAEF83A2A83854F0093DF79 /* LocationManager.swift */,
 				4BAEF8462A8C9C4A0093DF79 /* NaviManager.swift */,
+				4BAEF8602A8E55BE0093DF79 /* AppManager.swift */,
+				4BE8C62A2A8F39F900A67808 /* KeyboardManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -391,6 +425,69 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
+		4BAEF8622A8E5CD80093DF79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C63B2A90FF1D00A67808 /* Service */,
+				4BAEF8632A8E5F300093DF79 /* VM */,
+				4BAEF8642A8E5F3E0093DF79 /* LoginV.swift */,
+				4BE8C6252A8F2F1B00A67808 /* idLoginV.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BAEF8632A8E5F300093DF79 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C62C2A8F41DC00A67808 /* LoginVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		4BE8C6302A9053AA00A67808 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C6372A90FA9200A67808 /* Interceptor */,
+				4BE8C6312A90588D00A67808 /* ApiClient.swift */,
+				4BE8C6332A90F26A00A67808 /* ApiLogger.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4BE8C6372A90FA9200A67808 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C6382A90FAF500A67808 /* BaseInterceptor.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		4BE8C63B2A90FF1D00A67808 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C6412A9107A500A67808 /* DataModel */,
+				4BE8C63C2A90FF3200A67808 /* Router */,
+				4BE8C63F2A91074E00A67808 /* LoginApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4BE8C63C2A90FF3200A67808 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C63D2A90FF4B00A67808 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4BE8C6412A9107A500A67808 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8C6422A9107D900A67808 /* UserListRawData.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		9723826B77955429C38A18F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +534,7 @@
 				4BAEF80C2A8350410093DF79 /* Alamofire */,
 				4BAEF80F2A8350D10093DF79 /* FirebaseAnalytics */,
 				4BAEF8112A8350D10093DF79 /* FirebaseCrashlytics */,
+				4BE8C6282A8F30E200A67808 /* FloatingLabelTextFieldSwiftUI */,
 			);
 			productName = FeedMap;
 			productReference = 4BAEF7D22A80D6360093DF79 /* FeedMap.app */;
@@ -517,6 +615,7 @@
 			packageReferences = (
 				4BAEF80B2A8350410093DF79 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4BE8C6272A8F30E200A67808 /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */,
 			);
 			productRefGroup = 4BAEF7D32A80D6360093DF79 /* Products */;
 			projectDirPath = "";
@@ -709,22 +808,35 @@
 				4BAEF81A2A8359EA0093DF79 /* Font+Ext.swift in Sources */,
 				4BAEF8232A8376030093DF79 /* BlackBTN.swift in Sources */,
 				4BAEF85F2A8E14760093DF79 /* CommonLoadingV.swift in Sources */,
+				4BE8C6432A9107D900A67808 /* UserListRawData.swift in Sources */,
 				4BAEF8522A8DF2D30093DF79 /* CommonWebView.swift in Sources */,
+				4BE8C62F2A8F481D00A67808 /* String+Ext.swift in Sources */,
 				4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */,
+				4BE8C6342A90F26A00A67808 /* ApiLogger.swift in Sources */,
 				4BAEF8142A8351CE0093DF79 /* Defines.swift in Sources */,
+				4BE8C6402A91074E00A67808 /* LoginApiService.swift in Sources */,
+				4BE8C63E2A90FF4B00A67808 /* LoginRouter.swift in Sources */,
+				4BE8C6322A90588D00A67808 /* ApiClient.swift in Sources */,
+				4BE8C62B2A8F39F900A67808 /* KeyboardManager.swift in Sources */,
+				4BAEF8652A8E5F3E0093DF79 /* LoginV.swift in Sources */,
 				4BAEF8172A8357E70093DF79 /* SplashV.swift in Sources */,
 				4BAEF83E2A8389110093DF79 /* AccessGuideVM.swift in Sources */,
+				4BAEF8612A8E55BE0093DF79 /* AppManager.swift in Sources */,
 				4BAEF8272A8378610093DF79 /* Color+Ext.swift in Sources */,
 				4BAEF83B2A83854F0093DF79 /* LocationManager.swift in Sources */,
 				4BAEF84D2A8DE7130093DF79 /* TermsV.swift in Sources */,
 				4BAEF8572A8E05860093DF79 /* CommonWebV.swift in Sources */,
 				4BAEF84F2A8DF1040093DF79 /* UINavigationController+Ext.swift in Sources */,
+				4BE8C6262A8F2F1B00A67808 /* idLoginV.swift in Sources */,
 				4BAEF84A2A8CABA40093DF79 /* MyPageV.swift in Sources */,
+				4BE8C6362A90F4F400A67808 /* Notification.Name+Ext.swift in Sources */,
 				4BAEF81D2A835F420093DF79 /* SplashVM.swift in Sources */,
 				4BAEF8472A8C9C4A0093DF79 /* NaviManager.swift in Sources */,
 				4BAEF8552A8DFA0F0093DF79 /* CommonWebVM.swift in Sources */,
 				4BAEF85D2A8E126C0093DF79 /* CommonLoadingIndicator.swift in Sources */,
+				4BE8C6392A90FAF500A67808 /* BaseInterceptor.swift in Sources */,
 				4BAEF8452A8C8D510093DF79 /* UIApplication+Ext.swift in Sources */,
+				4BE8C62D2A8F41DC00A67808 /* LoginVM.swift in Sources */,
 				4BAEF8252A83777B0093DF79 /* GrayBox.swift in Sources */,
 				4BAEF8412A8C6F5A0093DF79 /* CommonTabV.swift in Sources */,
 				4BAEF7D62A80D6360093DF79 /* FeedMapApp.swift in Sources */,
@@ -1100,6 +1212,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		4BE8C6272A8F30E200A67808 /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishanraja/FloatingLabelTextFieldSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1117,6 +1237,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4BAEF80E2A8350D10093DF79 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		4BE8C6282A8F30E200A67808 /* FloatingLabelTextFieldSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BE8C6272A8F30E200A67808 /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */;
+			productName = FloatingLabelTextFieldSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

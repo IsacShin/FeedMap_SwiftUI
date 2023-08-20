@@ -11,7 +11,7 @@ import Photos
 
 struct AccessGuideV: View {
     
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var appVM: AppVM
     @ObservedObject var vm = AccessGuideVM()
     @Binding var isGuideShow: Bool
     
@@ -74,7 +74,7 @@ struct AccessGuideV: View {
                     UDF.set(true, forKey: "firstLaunch")
                     NaviManager.popToRootView {
                         withAnimation {
-                            appState.rootViewId = .CommonTabView
+                            appVM.rootViewId = .CommonTabView
                         }
                     }
                 }

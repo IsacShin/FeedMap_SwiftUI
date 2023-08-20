@@ -9,9 +9,11 @@ import SwiftUI
 
 struct MyPageV: View {
     
+    @EnvironmentObject var appVM: AppVM
     @State var isVersionAlert: Bool = false
     @State var isQnAAlert: Bool = false
     @State var isLogoutAlert: Bool = false
+    @Binding var selectTab: TabType
     
     var body: some View {
         
@@ -127,7 +129,14 @@ struct MyPageV: View {
                                 }
                                 .alert(isPresented: $isLogoutAlert) {
                                     Alert(title: Text("로그아웃 하시겠습니까?"), primaryButton: .default(Text("확인"), action: {
-                                        print("버튼클릭")
+                                        AppManager.logout {
+                                            self.selectTab = .MAP
+                                            DispatchQueue.main.async {
+                                                NaviManager.popToRootView {
+                                                    appVM.rootViewId = .CommonTabView
+                                                }
+                                            }
+                                        }
                                     }), secondaryButton: .cancel(Text("취소")))
                                 }
                                 Spacer().frame(height: 10)
@@ -150,6 +159,6 @@ struct MyPageV: View {
 
 struct MyPageV_Previews: PreviewProvider {
     static var previews: some View {
-        MyPageV()
+        MyPageV(selectTab: .constant(.MYPAGE))
     }
 }
