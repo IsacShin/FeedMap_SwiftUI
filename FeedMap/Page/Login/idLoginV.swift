@@ -14,6 +14,8 @@ struct idLoginV: View {
         self.vm = vm
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = .darkGray
     }
     
     @State private var id: String = ""
@@ -32,71 +34,44 @@ struct idLoginV: View {
                 VStack(spacing: 0) {
                     Spacer()
                     FloatingLabelTextField($id, placeholder: "아이디")
-                    .titleColor(.white)
-                    .selectedLineColor(.white)
-                    .selectedTextColor(.white)
-                    .selectedTitleColor(.white)
-                    .lineColor(.white)
-                    .placeholderColor(.white)
-                    .placeholderFont(.system(size: 17))
-                    .titleFont(.system(size: 17))
-                    .textColor(.gray)
-                    .keyboardType(.alphabet)
-                    .frame(height: 60)
-                    .padding(.horizontal, 20)
-                    .toolbar {
-                        ToolbarItemGroup(placement: .keyboard) {
-                            Button {
-                                self.endEditing(true)
-                            } label: {
-                                Text("닫기")
-                                    .font(.bold(size: 17))
+                        .floatingLabelTextFieldStyle(text: $id, placeholder: "아이디")
+                        .toolbar {
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Button {
+                                    self.endEditing(true)
+                                } label: {
+                                    Text("닫기")
+                                        .font(.bold(size: 17))
+                                }
+                                Spacer()
                             }
-                            Spacer()
                         }
-                    }
-                    .onChange(of: id, perform: { newValue in
-                        if id.count > 20  {
-                            id = String(newValue.prefix(20))
-                        } else {
-                            if newValue.count > 3 {
-                                self.vm.idCheck.send(true)
+                        .onChange(of: id, perform: { newValue in
+                            if id.count > 20  {
+                                id = String(newValue.prefix(20))
                             } else {
-                                self.vm.idCheck.send(false)
+                                if newValue.count > 3 {
+                                    self.vm.idCheck.send(true)
+                                } else {
+                                    self.vm.idCheck.send(false)
+                                }
                             }
-                        }
-                    })
+                        })
                     
                     Spacer().frame(height: 12)
-                    
-                    FloatingLabelTextField($password, placeholder: "비밀번호", editingChanged: { (isChanged) in
-                        
-                    }) {
-                        print(password)
-                    }
-                    .titleColor(.white)
-                    .selectedLineColor(.white)
-                    .selectedTextColor(.white)
-                    .selectedTitleColor(.white)
-                    .lineColor(.white)
-                    .placeholderColor(.white)
-                    .placeholderFont(.system(size: 17))
-                    .titleFont(.system(size: 17))
-                    .textColor(.gray)
-                    .isSecureTextEntry(true)
-                    .frame(height: 60)
-                    .padding(.horizontal, 20)
-                    .onChange(of: password, perform: { newValue in
-                        if password.count > 20  {
-                            password = String(newValue.prefix(20))
-                        } else {
-                            if newValue.count > 3 {
-                                self.vm.pwdCheck.send(true)
+                    FloatingLabelTextField($password, placeholder: "비밀번호")
+                        .floatingLabelTextFieldStyle(text: $password, placeholder: "비밀번호", isSecurity: true)
+                        .onChange(of: password, perform: { newValue in
+                            if password.count > 20  {
+                                password = String(newValue.prefix(20))
                             } else {
-                                self.vm.pwdCheck.send(false)
+                                if newValue.count > 3 {
+                                    self.vm.pwdCheck.send(true)
+                                } else {
+                                    self.vm.pwdCheck.send(false)
+                                }
                             }
-                        }
-                    })
+                        })
                     
                     Button {
                         self.vm.idLogin(id: id, password: password) {

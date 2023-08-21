@@ -43,6 +43,7 @@ class LoginVM: ObservableObject {
                 }
                 
                 self.loginUser = member
+                AppManager.loginUser = self.loginUser
                 
                 self.loginSuccess(
                     token: "\(member.uuid)",

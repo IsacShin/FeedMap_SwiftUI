@@ -9,7 +9,13 @@ import SwiftUI
 import iProgressHUD
 
 struct CommonWebV: View {
-    @State var urlStr: String = "https://www.naver.com"
+    
+    init(urlStr: String) {
+        self.urlStr = urlStr
+        UINavigationBar.appearance().isTranslucent = true
+    }
+    
+    @State var urlStr: String
     @State var isShowAlert: Bool = false
     @State var isLoading: Bool = false
     @ObservedObject var webVM = CommonWebVM()
@@ -43,6 +49,6 @@ struct CommonWebV: View {
 
 struct CommonWebWrapV_Previews: PreviewProvider {
     static var previews: some View {
-        CommonWebV()
+        CommonWebV(urlStr: "https://www.naver.com")
     }
 }

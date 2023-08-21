@@ -18,6 +18,6 @@ final class ApiClient {
     var session: Session
     
     init() {
-        session = Session(interceptor: interceptors, eventMonitors: monitors)
+        session = Session(eventMonitors: monitors)
     }
 }

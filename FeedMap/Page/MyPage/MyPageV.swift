@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct MyPageV: View {
     
@@ -28,16 +29,29 @@ struct MyPageV: View {
                 Spacer().frame(height: 20)
                 ScrollView {
                     VStack(spacing: 0) {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .frame(width: 100,height: 100)
-                            .aspectRatio(contentMode: .fit)
+                        if let profileImg = UDF.string(forKey: "profileImg") {
+                            let url = URL(string: profileImg)!
+                            KFImage(url)
+                                .placeholder {
+                                    Image(systemName: "person.circle.fill")
+                                }
+                                .resizable()
+                                .frame(width: 100,height: 100)
+                                .clipShape(Circle())
+                                .aspectRatio(contentMode: .fit)
+                        } else {
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .frame(width: 100,height: 100)
+                                .aspectRatio(contentMode: .fit)
+                        }
+                        
                         Spacer().frame(height: 10)
-                        Text("신이삭님")
+                        Text("\(UDF.string(forKey: "userName") ?? "")님")
                             .font(.regular(size: 18))
                             .foregroundColor(.white)
                         Spacer().frame(height: 10)
-                        Text(verbatim: "isac9305@gmail.com")
+                        Text(verbatim: "\(UDF.string(forKey: "memId") ?? "")")
                             .padding(0)
                             .font(.regular(size: 18))
                             .foregroundColor(.white)
