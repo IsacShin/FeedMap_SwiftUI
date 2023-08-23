@@ -83,6 +83,7 @@
 		4BE8C6862A95D4EB00A67808 /* FeedApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6852A95D4EB00A67808 /* FeedApiService.swift */; };
 		4BE8C6882A95D56F00A67808 /* FeedUpdateRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6872A95D56F00A67808 /* FeedUpdateRawData.swift */; };
 		4BE8C68A2A95D61A00A67808 /* FeedWriteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C6892A95D61A00A67808 /* FeedWriteVM.swift */; };
+		4BE8C68C2A9648E500A67808 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C68B2A9648E500A67808 /* VisualEffectBlur.swift */; };
 		4CD9BC7DE448184AA0B772A8 /* Pods_FeedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */; };
 		4D84A36F97DEF61C1E6473D9 /* Pods_FeedMap_FeedMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D78EFA5B8F84ABF1010357 /* Pods_FeedMap_FeedMapUITests.framework */; };
 		A58C573024714CA9A41FEFD9 /* Pods_FeedMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */; };
@@ -185,6 +186,7 @@
 		4BE8C6852A95D4EB00A67808 /* FeedApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApiService.swift; sourceTree = "<group>"; };
 		4BE8C6872A95D56F00A67808 /* FeedUpdateRawData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUpdateRawData.swift; sourceTree = "<group>"; };
 		4BE8C6892A95D61A00A67808 /* FeedWriteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWriteVM.swift; sourceTree = "<group>"; };
+		4BE8C68B2A9648E500A67808 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		686E7D9112ECBAB8FF29A128 /* Pods_FeedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FA2B5258EFBC23C4950833 /* Pods-FeedMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMapTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedMapTests/Pods-FeedMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB83E9920BEAC6D4631BD9F /* Pods_FeedMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -390,6 +392,7 @@
 				4BE8C64A2A92570000A67808 /* FloatingLabelTF.swift */,
 				4BE8C6682A9486D000A67808 /* CornerRadiusShape.swift */,
 				4BE8C66B2A9486EE00A67808 /* CornerRadiusStyle.swift */,
+				4BE8C68B2A9648E500A67808 /* VisualEffectBlur.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1046,6 +1049,7 @@
 				4BE8C6862A95D4EB00A67808 /* FeedApiService.swift in Sources */,
 				4BE8C62F2A8F481D00A67808 /* String+Ext.swift in Sources */,
 				4BE8C6642A944FFB00A67808 /* MapView.swift in Sources */,
+				4BE8C68C2A9648E500A67808 /* VisualEffectBlur.swift in Sources */,
 				4BAEF8202A83689C0093DF79 /* AccessGuideV.swift in Sources */,
 				4BE8C66C2A9486EE00A67808 /* CornerRadiusStyle.swift in Sources */,
 				4BE8C6522A92FF8700A67808 /* JoinRawData.swift in Sources */,

@@ -62,7 +62,7 @@ struct SelectTabV: View {
                         Spacer().frame(height: 8)
                     }
                     .padding(.horizontal, 20)
-                    .background(DARK_COLOR).opacity(0.9)
+                    .background(VisualEffectBlur(blurStyle: .dark))
                     .cornerRadius(radius: 16.0, corners: [.topLeft, .topRight])
                 }
                 
