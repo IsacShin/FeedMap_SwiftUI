@@ -9,8 +9,11 @@ import Foundation
 import CoreLocation
 
 final class LocationManager: NSObject, CLLocationManagerDelegate {
-    var clManager = CLLocationManager()
     static let shared = LocationManager()
+
+    var clManager = CLLocationManager()
+    var currentLocation = CLLocation(latitude: 37.476284, longitude: 127.03532)
+
     
     private override init() {
         super.init()
@@ -30,16 +33,16 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
                     self.clManager.startUpdatingLocation()
                 default:
                     print("Not location found")
-//                    UserManager.shared.currentLocation = CLLocation(
-//                        latitude: 37.476284,
-//                        longitude: 127.03532
-//                    )
+                    LocationManager.shared.currentLocation = CLLocation(
+                        latitude: 37.476284,
+                        longitude: 127.03532
+                    )
                 }
             } else {
-//                UserManager.shared.currentLocation = CLLocation(
-//                    latitude: 37.476284,
-//                    longitude: 127.03532
-//                )
+                LocationManager.shared.currentLocation = CLLocation(
+                    latitude: 37.476284,
+                    longitude: 127.03532
+                )
             }
         }
         
@@ -50,19 +53,19 @@ extension LocationManager {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         guard let location = manager.location else {
-//            UserManager.shared.currentLocation = CLLocation(
-//                latitude: 37.476284,
-//                longitude: 127.03532
-//            )
+            LocationManager.shared.currentLocation = CLLocation(
+                latitude: 37.476284,
+                longitude: 127.03532
+            )
             return
         }
         
         print("위도 \(location.coordinate.latitude),경도 \(location.coordinate.longitude)")
         
-//        UserManager.shared.currentLocation = CLLocation(
-//            latitude: location.coordinate.latitude,
-//            longitude: location.coordinate.longitude
-//        )
+        LocationManager.shared.currentLocation = CLLocation(
+            latitude: location.coordinate.latitude,
+            longitude: location.coordinate.longitude
+        )
         
         self.clManager.stopUpdatingLocation()
     }

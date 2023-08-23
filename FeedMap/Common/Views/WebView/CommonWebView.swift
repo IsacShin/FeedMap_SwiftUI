@@ -82,7 +82,6 @@ struct CommonWebView: UIViewRepresentable {
     class Coordinator: NSObject {
         var webV: CommonWebView
         var subscriptions = Set<AnyCancellable>()
-        @Environment(\.presentationMode) private var presentationMode
 
         init(_ webV: CommonWebView) {
             self.webV = webV
@@ -158,7 +157,7 @@ extension CommonWebView.Coordinator: WKScriptMessageHandler {
             
             print("\(jibunAddress)\n\(roadAddress)\n\(zonecode)")
 
-            NaviManager.popViewController {
+            NaviManager.popToRootView(completion: {
                 var userInfo = [String: Any]()
                 
                 userInfo["jibunAddress"] = jibunAddress
@@ -170,9 +169,7 @@ extension CommonWebView.Coordinator: WKScriptMessageHandler {
                     .post(name: Notification.Name("addrInfo"),
                           object: nil,
                           userInfo: userInfo)
-            } completion: {
-                self.presentationMode.wrappedValue.dismiss()
-            }
+            })
         }
     }
 }

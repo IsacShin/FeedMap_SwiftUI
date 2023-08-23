@@ -21,12 +21,12 @@ struct idLoginV: View {
     @State private var id: String = ""
     @State private var password: String = ""
     @State private var isValid: Bool = false
-    @State var keyboardStatus: KeyboardManager.Status = .hide
-    @State var isLoginFailed: Bool = false
+    @State private var keyboardStatus: KeyboardManager.Status = .hide
+    @State private var isLoginFailed: Bool = false
     
-    @EnvironmentObject var appVM: AppVM
-    @ObservedObject var keyboardManager = KeyboardManager()
-    @ObservedObject var vm: LoginVM
+    @EnvironmentObject private var appVM: AppVM
+    @ObservedObject private var keyboardManager = KeyboardManager()
+    @ObservedObject private var vm: LoginVM
 
     var body: some View {
         GeometryReader { geometry in

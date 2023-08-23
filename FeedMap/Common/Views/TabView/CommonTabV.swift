@@ -16,6 +16,10 @@ struct CommonTabV: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = .lightGray
         UITabBar.appearance().backgroundColor = UIColor.darkGray
+//        UITabBar.appearance().barTintColor = UIColor.darkGray
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().isTranslucent = true
     }
     
     @State var selectTab: TabType = .MAP
@@ -25,7 +29,7 @@ struct CommonTabV: View {
         
         if isLogin {
             TabView(selection: $selectTab) {
-                Color.red
+                MapV()
                     .tabItem {
                         Image(systemName: "map")
                         Text("Map")

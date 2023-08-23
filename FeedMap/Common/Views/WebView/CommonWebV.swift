@@ -12,7 +12,6 @@ struct CommonWebV: View {
     
     init(urlStr: String) {
         self.urlStr = urlStr
-        UINavigationBar.appearance().isTranslucent = true
     }
     
     @State var urlStr: String
@@ -29,8 +28,11 @@ struct CommonWebV: View {
             if isLoading {
                 CommonLoadingV()
             }
-                
         }
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(false)
+
         .background(DARK_COLOR)
         .onReceive(webVM.showIndicatorSubject) { isLoading in
             self.isLoading = isLoading

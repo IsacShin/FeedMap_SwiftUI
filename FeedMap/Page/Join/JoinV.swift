@@ -181,7 +181,7 @@ struct JoinV: View {
                       
                     HStack {
                         Button {
-                            self.isTermCheck = true
+                            self.isTermCheck.toggle()
                             self.vm.termCheck.send(self.isTermCheck)
                         } label: {
                             Image(isTermCheck ? "chkOn" : "chkOff")
@@ -259,11 +259,11 @@ struct JoinV: View {
                 var msg: String = ""
                 
                 if self.alertType == .joinSuccess {
-                    msg = "가입되었습니다."
+                    msg = AlertType.joinSuccess.rawValue
                 } else if self.alertType == .isJoinedAlert {
-                    msg = "이미 가입한 사용자 입니다."
+                    msg = AlertType.isJoinedAlert.rawValue
                 } else if self.alertType == .isJoinFailed {
-                    msg = "문제가 발생하였습니다.\n다시 시도해주세요."
+                    msg = AlertType.isJoinFailed.rawValue
                 }
                 return Alert(title: Text(msg), dismissButton: .default(Text("확인"), action: {
                     NaviManager.popToRootView()
