@@ -20,7 +20,7 @@ struct MapV: View {
     @State var showAlert = false
     @State var showFeedWrite = false
     @State var selectFeedRawData: FeedRawData?
-    
+    @State var isUpdateCheck: Bool = false
     var body: some View {
         
         NavigationView {
@@ -30,6 +30,7 @@ struct MapV: View {
                         markersData: $markersData,
                         zoomLevel: $zoomLevel,
                         moveLocation: $moveLocation,
+                        isUpdateCheck: $isUpdateCheck,
                         mapVM: self.vm)
                     .edgesIgnoringSafeArea(.all)
                     
@@ -105,12 +106,14 @@ struct MapV: View {
                 self.setNaviBarAppearnce()
                 self.vm.isSelectTab = false
                 self.vm.checkCurrentLocationAuth {
-                    self.vm.getFeedList(false, loca: nil) {}
+                    self.vm.getFeedList(false, loca: nil) {
+                        self.vm.isUpdateCheck = true
+                    }
                 }
             }
-            
             .onReceive(self.vm.currentLocation) { location in
                 guard let location = location else { return }
+                self.vm.isUpdateCheck = true
                 self.moveLocation = location
             }
             .onReceive(self.vm.isCheckCurrentLocationFail) { check in
@@ -119,6 +122,7 @@ struct MapV: View {
             }
             .onReceive(self.vm.moveLocation) { location in
                 guard let location = location else { return }
+                self.vm.isUpdateCheck = true
                 self.moveLocation = location
                 self.vm.getFeedList(true, loca: location) {
                     let check = self.vm.isFeedCheck
@@ -132,10 +136,14 @@ struct MapV: View {
                 }
             }
             .onReceive(self.vm.feedListRawData) { list in
+                self.vm.isUpdateCheck = true
                 self.markersData = list
             }
             .onReceive(self.vm.selectFeedRawData) { data in
                 self.selectFeedRawData = data
+            }
+            .onReceive(self.vm.$isUpdateCheck) { isUpdateCheck in
+                self.isUpdateCheck = isUpdateCheck
             }
             
         }
@@ -173,7 +181,6 @@ struct MapV: View {
 extension MapV {
     func setNaviBarAppearnce() {
         let appearance = UINavigationBarAppearance()
-//        appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor.darkGray
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]

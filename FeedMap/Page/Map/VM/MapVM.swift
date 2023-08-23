@@ -23,6 +23,7 @@ class MapVM: NSObject, ObservableObject {
     @Published var isFeedCheck = false
     @Published var centerLocation: CLLocation?
     @Published var centerAddr: String?
+    @Published var isUpdateCheck = false
    
     private var clManager: CLLocationManager? = LocationManager.shared.clManager
     private var currentHandler: (() -> Void)?

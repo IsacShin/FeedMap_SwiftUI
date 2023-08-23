@@ -14,6 +14,7 @@ struct MapView: UIViewRepresentable {
     @Binding var markersData: [FeedRawData]?
     @Binding var zoomLevel: Float
     @Binding var moveLocation: CLLocation?
+    @Binding var isUpdateCheck: Bool
     @ObservedObject var mapVM: MapVM
         
     let gMap = GMSMapView(frame: .zero)
@@ -35,25 +36,28 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: GMSMapView, context: Context) {
-        uiView.clear()
-        
-        if let datas = self.markersData {
-            if datas.count > 0 {
-                datas.forEach { data in
-                    guard let lat = data.latitude,
-                          let lng = data.longitude,
-                          let dLat = Double(lat),
-                          let dLng = Double(lng) else { return }
-                    
-                    let loca = CLLocation(latitude: dLat, longitude: dLng)
-                    self.createMarker(mapView: uiView, loca: loca, data: data)
+        if isUpdateCheck {
+            uiView.clear()
+            
+            if let datas = self.markersData {
+                if datas.count > 0 {
+                    datas.forEach { data in
+                        guard let lat = data.latitude,
+                              let lng = data.longitude,
+                              let dLat = Double(lat),
+                              let dLng = Double(lng) else { return }
+                        
+                        let loca = CLLocation(latitude: dLat, longitude: dLng)
+                        self.createMarker(mapView: uiView, loca: loca, data: data)
+                    }
                 }
+            }
+            
+            if let location = self.moveLocation {
+                self.mapCameraMove(mapView: uiView, location: location)
             }
         }
         
-        if let location = self.moveLocation {
-            self.mapCameraMove(mapView: uiView, location: location)
-        }
 
     }
     
@@ -136,6 +140,8 @@ extension MapView {
         )
         mapView.camera = camera
         self.moveLocation = nil
+        self.isUpdateCheck = false
+
     }
     
     private func createMarker(mapView: GMSMapView, loca: CLLocation, data: FeedRawData) {
@@ -170,5 +176,6 @@ extension MapView {
             }
         }
         marker.map = mapView
+        self.isUpdateCheck = false
     }
 }

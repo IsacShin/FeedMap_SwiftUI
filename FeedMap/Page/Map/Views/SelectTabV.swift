@@ -34,7 +34,6 @@ struct SelectTabV: View {
                            let dLng = Double(lng) {
                             let loca = CLLocation(latitude: dLat, longitude: dLng)
                             NavigationLink {
-                                
                                 FeedWriteV(isUpdateV: true,
                                            loca: loca,
                                            address: selectFeedData.addr,
@@ -46,15 +45,14 @@ struct SelectTabV: View {
                                             Image(systemName: "person.circle.fill")
                                         }
                                         .resizable()
+                                        .scaledToFill()
                                         .frame(width: g.size.width - 40, height: 200)
-                                        .aspectRatio(contentMode: .fill)
                                         .cornerRadius(16)
+                                        .clipped()
                                 }
                             }
                         }
                         
-                        
-
                         Text(selectFeedData.title ?? "")
                             .foregroundColor(.white)
                             .font(.bold(size: 17))

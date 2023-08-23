@@ -111,7 +111,7 @@ enum JoinRouter: URLRequestConvertible {
         let multipartFormData = MultipartFormData()
         switch self {
         case .fileUpload(let uploadImg):
-            guard let fileData = uploadImg.jpegData(compressionQuality: 1.0) else { return multipartFormData }
+            guard let fileData = uploadImg.jpegData(compressionQuality: 0.1) else { return multipartFormData }
             multipartFormData.append(fileData,
                        withName: "file0",
                        fileName: "file0.jpeg",
