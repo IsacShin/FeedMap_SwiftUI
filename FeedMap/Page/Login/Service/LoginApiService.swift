@@ -17,4 +17,12 @@ enum LoginApiService {
             .value()
             .eraseToAnyPublisher()
     }
+    
+    static func removeId(id: String) -> AnyPublisher<FeedUpdateRawData, AFError> {
+        return ApiClient.shared.session
+            .request(LoginRouter.removeId(id: id))
+            .publishDecodable(type: FeedUpdateRawData.self)
+            .value()
+            .eraseToAnyPublisher()
+    }
 }

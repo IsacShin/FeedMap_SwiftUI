@@ -10,6 +10,7 @@ import Combine
 import SwiftUI
 
 struct AppManager {
+    static var subscriptions = Set<AnyCancellable>()
 
     static let isLogin = PassthroughSubject<Bool, Never>()
     static var loginUser: UserRawData?
@@ -28,7 +29,25 @@ struct AppManager {
         if let completion = completion {
             completion()
         }
+    }
+    
+    static func removeId(id: String, completion: (() -> Void)?) {
         
-        
+        LoginApiService.removeId(id: id)
+            .sink { complete in
+                print("AppManager completion: \(complete)")
+                switch complete {
+                case .finished:
+                    print("AppManager completion: finished")
+                    
+                case .failure(let error):
+                    print("AppManager completion: failure(\(error))")
+                }
+            } receiveValue: { result in
+                if result.resultCode == 200 {
+                    completion?()
+                }
+            }
+            .store(in: &subscriptions)
     }
 }

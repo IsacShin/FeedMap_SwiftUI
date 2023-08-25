@@ -14,6 +14,7 @@ enum FeedRouter: URLRequestConvertible {
     case insertFeed([String: Any])
     case updateFeed([String: Any])
     case removeFeed([String: Any])
+    case insertReport([String: Any])
     
     var baseURL: URL {
         return URL(string: DOMAIN)!
@@ -29,6 +30,8 @@ enum FeedRouter: URLRequestConvertible {
             return "/updateFeed.do"
         case .removeFeed:
             return "/removeFeed.do"
+        case .insertReport:
+            return "/insertReport.do"
         }
     }
     
@@ -127,6 +130,19 @@ enum FeedRouter: URLRequestConvertible {
             }
             if let id = info["id"] as? Int {
                 params.updateValue(id, forKey: "id")
+            }
+            return params
+            
+        case .insertReport(let info):
+            var params = Parameters()
+            if let memId = info["reporter"] as? String {
+                params.updateValue(memId, forKey: "reporter")
+            }
+            if let id = info["feedid"] as? Int {
+                params.updateValue(id, forKey: "feedid")
+            }
+            if let reason = info["reason"] as? String {
+                params.updateValue(reason, forKey: "reason")
             }
             return params
         }

@@ -55,6 +55,16 @@ enum FeedApiService {
             .eraseToAnyPublisher()
         
     }
+    
+    static func insertReport(info: [String: Any]) -> AnyPublisher<FeedUpdateRawData, AFError> {
+        
+        return ApiClient.shared.session
+            .request(FeedRouter.insertReport(info))
+            .publishDecodable(type: FeedUpdateRawData.self)
+            .value()
+            .eraseToAnyPublisher()
+        
+    }
 
 
 }

@@ -13,7 +13,8 @@ struct MyPageV: View {
     @EnvironmentObject var appVM: AppVM
     @State var isVersionAlert: Bool = false
     @State var isQnAAlert: Bool = false
-    @State var isLogoutAlert: Bool = false
+    @State var showAlert: Bool = false
+    @State var alertType: AlertType = .loginOutConfirm
     @Binding var selectTab: TabType
     
     var body: some View {
@@ -128,7 +129,8 @@ struct MyPageV: View {
                                     .background(Color.white)
                                 
                                 Button {
-                                    self.isLogoutAlert.toggle()
+                                    self.alertType = .loginOutConfirm
+                                    self.showAlert.toggle()
                                 } label: {
                                     // 로그아웃
                                     HStack(alignment: .center) {
@@ -141,17 +143,34 @@ struct MyPageV: View {
                                     }
                                     .frame(height: 52)
                                 }
-                                .alert(isPresented: $isLogoutAlert) {
-                                    Alert(title: Text("로그아웃 하시겠습니까?"), primaryButton: .default(Text("확인"), action: {
-                                        AppManager.logout {
-                                            self.selectTab = .MAP
-                                            DispatchQueue.main.async {
-                                                NaviManager.popToRootView {
-                                                    appVM.rootViewId = .CommonTabView
+                                .alert(isPresented: $showAlert) {
+                                    if alertType == .loginOutConfirm {
+                                        return Alert(title: Text(alertType.rawValue), primaryButton: .default(Text("확인"), action: {
+                                            AppManager.logout {
+                                                self.selectTab = .MAP
+                                                DispatchQueue.main.async {
+                                                    NaviManager.popToRootView {
+                                                        appVM.rootViewId = .CommonTabView
+                                                    }
                                                 }
                                             }
-                                        }
-                                    }), secondaryButton: .cancel(Text("취소")))
+                                        }), secondaryButton: .cancel(Text("취소")))
+                                    } else {
+                                        return Alert(title: Text(alertType.rawValue), primaryButton: .default(Text("확인"), action: {
+                                            guard let memId = UDF.string(forKey: "memId") else { return }
+                                            AppManager.removeId(id: memId) {
+                                                AppManager.logout {
+                                                    self.selectTab = .MAP
+                                                    DispatchQueue.main.async {
+                                                        NaviManager.popToRootView {
+                                                            appVM.rootViewId = .CommonTabView
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }), secondaryButton: .cancel(Text("취소")))
+                                    }
+                                    
                                 }
                                 Spacer().frame(height: 10)
                
@@ -165,6 +184,18 @@ struct MyPageV: View {
                     }
                     
                 }
+                
+                Spacer()
+                
+                Button {
+                    self.alertType = .removeMemberConfirm
+                    self.showAlert.toggle()
+                } label: {
+                    Text("회원탈퇴")
+                        .foregroundColor(.red)
+                }
+
+                Spacer().frame(height: 40)
             }
             .background(DARK_COLOR)
         }

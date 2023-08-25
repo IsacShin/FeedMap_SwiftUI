@@ -20,4 +20,9 @@ enum AlertType: String, CaseIterable {
     case feedImgNotExists = "대표 이미지를 등록해주세요."
     case feedDeleteSuccess = "삭제되었습니다."
     case feedDeleteConfirm = "삭제 하시겠습니까?"
+    case isReportExist = "이미 신고한 피드 입니다."
+    case isReportSuccess = "신고 내용이 접수되었습니다.\n검토까지는 최대 24시간 소요됩니다."
+    case isReportFailed = "오류가 발생했습니다.\n다시 시도해주세요."
+    case loginOutConfirm = "로그아웃 하시겠습니까?"
+    case removeMemberConfirm = "회원을 탈퇴하시겠습니까?\n탈퇴하실 경우 작성한 피드까지 전부 삭제됩니다."
 }

@@ -36,7 +36,7 @@ struct CommonTabV: View {
                     }
                     .tag(TabType.MAP)
 
-                Color.yellow
+                FeedListV()
                     .tabItem {
                         Image(systemName: "list.bullet.below.rectangle")
                         Text("Feed")

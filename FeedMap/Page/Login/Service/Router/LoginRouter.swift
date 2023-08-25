@@ -10,6 +10,7 @@ import Alamofire
 
 enum LoginRouter: URLRequestConvertible {
     case idLogin(id: String, password: String)
+    case removeId(id: String)
     
     var baseURL: URL {
         return URL(string: DOMAIN)!
@@ -19,12 +20,15 @@ enum LoginRouter: URLRequestConvertible {
         switch self {
         case .idLogin:
             return "/getMember.do"
+        case .removeId:
+            return "/removeMember.do"
         }
     }
     
     var method: HTTPMethod {
         switch self {
         case .idLogin: return .get
+        case .removeId: return .get
         }
     }
     
@@ -34,6 +38,12 @@ enum LoginRouter: URLRequestConvertible {
             var params = Parameters()
             params.updateValue(id, forKey: "memid")
             params.updateValue(password, forKey: "password")
+            
+            return params
+            
+        case .removeId(let id):
+            var params = Parameters()
+            params.updateValue(id, forKey: "memid")
             
             return params
         }
