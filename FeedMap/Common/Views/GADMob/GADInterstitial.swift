@@ -22,7 +22,7 @@ final class GADInterstitial: NSObject, GADFullScreenContentDelegate {
     
     func loadFullAd() {
         DispatchQueue.main.async {
-            GADInterstitialAd.load(withAdUnitID: FULL_SCREEN_ADMOBKEY, request: GADRequest()) { ad, error in
+            GADInterstitialAd.load(withAdUnitID: adUnitID, request: GADRequest()) { ad, error in
                 if error != nil { return }
                 if let ad = ad {
                     self.interstitial = ad

@@ -43,9 +43,13 @@ struct CommonWebView: UIViewRepresentable {
         webV.uiDelegate = context.coordinator
         webV.navigationDelegate = context.coordinator
         webV.allowsBackForwardNavigationGestures = true
+        webV.tintColor = .systemBlue
+        if #available(iOS 16.4, *) {
+            webV.isInspectable = true
+        }
         
         let rfc = UIRefreshControl()
-        rfc.tintColor = .blue
+        rfc.tintColor = .lightGray
         webV.scrollView.bounces = true
         webV.scrollView.refreshControl = rfc
         
