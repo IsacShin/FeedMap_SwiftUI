@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B5C39CE2A98D43E00A0654C /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5C39CD2A98D43E00A0654C /* ImageModifier.swift */; };
 		4B5C39D02A98F42E00A0654C /* TextAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5C39CF2A98F42E00A0654C /* TextAlertView.swift */; };
+		4B5C39D52A99A1B000A0654C /* GADBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5C39D42A99A1B000A0654C /* GADBanner.swift */; };
+		4B5C39D72A99EDB100A0654C /* GADInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5C39D62A99EDB100A0654C /* GADInterstitial.swift */; };
 		4BAEF7D62A80D6360093DF79 /* FeedMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */; };
 		4BAEF7DA2A80D6380093DF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF7D92A80D6380093DF79 /* Assets.xcassets */; };
 		4BAEF7DD2A80D6380093DF79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEF7DC2A80D6380093DF79 /* Preview Assets.xcassets */; };
@@ -119,6 +121,8 @@
 		3898A46A96C0C8317D8D175E /* Pods-FeedMap-FeedMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedMap-FeedMapUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedMap-FeedMapUITests/Pods-FeedMap-FeedMapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B5C39CD2A98D43E00A0654C /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		4B5C39CF2A98F42E00A0654C /* TextAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlertView.swift; sourceTree = "<group>"; };
+		4B5C39D42A99A1B000A0654C /* GADBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADBanner.swift; sourceTree = "<group>"; };
+		4B5C39D62A99EDB100A0654C /* GADInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADInterstitial.swift; sourceTree = "<group>"; };
 		4BAEF7D22A80D6360093DF79 /* FeedMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAEF7D52A80D6360093DF79 /* FeedMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapApp.swift; sourceTree = "<group>"; };
 		4BAEF7D92A80D6380093DF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,6 +245,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5C39D32A99A19700A0654C /* GADMob */ = {
+			isa = PBXGroup;
+			children = (
+				4B5C39D42A99A1B000A0654C /* GADBanner.swift */,
+				4B5C39D62A99EDB100A0654C /* GADInterstitial.swift */,
+			);
+			path = GADMob;
+			sourceTree = "<group>";
+		};
 		4BAEF7C92A80D6360093DF79 = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +409,7 @@
 		4BAEF8212A8375CA0093DF79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B5C39D32A99A19700A0654C /* GADMob */,
 				4BE8C6942A9847F900A67808 /* ImageSliderView */,
 				4BE8C6622A944FF000A67808 /* MapView */,
 				4BE8C64C2A92F84A00A67808 /* YPImagePicker */,
@@ -1082,9 +1096,11 @@
 				4BAEF85F2A8E14760093DF79 /* CommonLoadingV.swift in Sources */,
 				4BE8C6772A94AD0C00A67808 /* GeocodeRawData.swift in Sources */,
 				4BE8C6432A9107D900A67808 /* UserListRawData.swift in Sources */,
+				4B5C39D52A99A1B000A0654C /* GADBanner.swift in Sources */,
 				4BE8C68E2A98345800A67808 /* FeedListV.swift in Sources */,
 				4BAEF8522A8DF2D30093DF79 /* CommonWebView.swift in Sources */,
 				4BE8C6862A95D4EB00A67808 /* FeedApiService.swift in Sources */,
+				4B5C39D72A99EDB100A0654C /* GADInterstitial.swift in Sources */,
 				4BE8C62F2A8F481D00A67808 /* String+Ext.swift in Sources */,
 				4BE8C6642A944FFB00A67808 /* MapView.swift in Sources */,
 				4BE8C68C2A9648E500A67808 /* VisualEffectBlur.swift in Sources */,
@@ -1368,6 +1384,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

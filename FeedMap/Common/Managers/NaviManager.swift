@@ -10,11 +10,7 @@ import SwiftUI
 
 struct NaviManager {
     static func popToRootView(completion: (() -> Void)? = nil) {
-        let keyWindow = UIApplication.shared.connectedScenes
-            .filter({$0.activationState == .foregroundActive})
-            .compactMap({$0 as? UIWindowScene})
-            .first?.windows
-            .filter({$0.isKeyWindow}).first
+        let keyWindow = WINDOW
         CATransaction.begin()
         CATransaction.setCompletionBlock(completion)
         findNavigationController(viewController: keyWindow?.rootViewController)?

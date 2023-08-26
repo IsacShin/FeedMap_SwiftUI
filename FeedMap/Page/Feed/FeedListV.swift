@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct FeedListV: View {
     @State var isMenuOpen = false
@@ -21,7 +22,7 @@ struct FeedListV: View {
 
     var body: some View {
         GeometryReader { g in
-            ZStack(alignment: .topTrailing) {
+            ZStack {
                 VStack(spacing: 0) {
                     HStack {
                         Spacer().frame(width: 20)
@@ -61,6 +62,8 @@ struct FeedListV: View {
                             self.isLoading = false
                         }
                     }
+                    
+                    AdmobV()
                     
                 }
 
@@ -109,16 +112,15 @@ struct FeedListV: View {
                     .padding(10)
                     .background(Color.gray)
                     .frame(width: 100)
-                    .offset(x: -10, y: 54)
+                    .offset(x: (g.size.width / 2) - 60, y: -(g.size.height / 2) + 94)
                 }
                 
                 if isTextAlertShow {
                     if let idx = self.selectFeedIdx {
                         TextAlertView(vm: self.vm, showAlert: $isTextAlertShow, textString: $textString, feedIdx: idx, title: "신고 접수", message: "")
                     }
-                    
                 }
-
+                
             }
             .onReceive(self.vm.feedListRawData, perform: { list in
                 self.list = list
@@ -189,6 +191,11 @@ extension FeedListV {
             }
         }
     }
+}
+
+@ViewBuilder func AdmobV() -> some View {
+    // admob
+    GADBanner().frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
 }
 
 struct FeedListV_Previews: PreviewProvider {

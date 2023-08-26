@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 // MARK: - SCREEN 관련
-let WINDOW                  = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+let WINDOW                  = UIApplication.getKeyWindow()
 let SCREEN_WIDTH            = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT           = UIScreen.main.bounds.size.height
 
@@ -39,3 +39,10 @@ let DEVICE_ID               = UIDevice.current.identifierForVendor?.uuidString
 let APP_ID                  = Bundle.main.bundleIdentifier ?? "com.isac.myreview"
 let DEVICE_VERSION          = "\(DEVICE.systemVersion)"
 let APP_NAME                = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? ""
+
+// MARK: - ADMOB 관련
+let BANNER_ADMOBKEY             = "ca-app-pub-6912457818283583/8311416199"
+let FULL_SCREEN_ADMOBKEY        = "ca-app-pub-6912457818283583/7268182863"
+
+let TEST_BANNER_ADMOBKEY        = "ca-app-pub-3940256099942544/2934735716"
+let TEST_FULL_ADMOBKEY          = "ca-app-pub-3940256099942544/4411468910"

@@ -16,7 +16,6 @@ struct CommonTabV: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = .lightGray
         UITabBar.appearance().backgroundColor = UIColor.darkGray
-//        UITabBar.appearance().barTintColor = UIColor.darkGray
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().isTranslucent = true

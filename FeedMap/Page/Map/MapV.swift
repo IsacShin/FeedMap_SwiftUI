@@ -21,6 +21,8 @@ struct MapV: View {
     @State var showFeedWrite = false
     @State var selectFeedRawData: FeedRawData?
     @State var isUpdateCheck: Bool = false
+    @State var isActive = false
+    
     var body: some View {
         
         NavigationView {
@@ -37,14 +39,17 @@ struct MapV: View {
                     VStack(alignment: .center, spacing: 0) {
                         Spacer().frame(height: 16)
                         
-                        NavigationLink {
-                            let urlStr = "https://isacshin.github.io/daumSearch/"
-                            CommonWebV(urlStr: urlStr)
-                        } label: {
-                            Image("searchBar")
-                                .resizable()
-                                .aspectRatio(353/58, contentMode: .fill)
-                                .frame(width: geometry.size.width - 40, height: 58)
+                        NavigationLink(destination: CommonWebV(urlStr: "https://isacshin.github.io/daumSearch/"), isActive: $isActive) {
+                            Button {
+                                GADInterstitial.shared.loadFullAd()
+                                isActive.toggle()
+                            } label: {
+                                Image("searchBar")
+                                    .resizable()
+                                    .aspectRatio(353/58, contentMode: .fill)
+                                    .frame(width: geometry.size.width - 40, height: 58)
+                            }
+
                         }
 
                         Spacer()
@@ -166,9 +171,12 @@ struct MapV: View {
                 return Alert(
                     title: Text(msg),
                     primaryButton: .default(Text("확인"))  {
+                        GADInterstitial.shared.loadFullAd()
                         self.showFeedWrite.toggle()
                     },
-                    secondaryButton: .cancel(Text("취소")))
+                    secondaryButton: .cancel(Text("취소")) {
+                        GADInterstitial.shared.loadFullAd()
+                    })
             }
 
             return Alert(title: Text(msg), dismissButton: .default(Text("확인"), action: {
