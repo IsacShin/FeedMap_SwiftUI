@@ -10,7 +10,6 @@ import Kingfisher
 
 struct ImageSliderV: View {
     @Binding var images: [String]
-    @GestureState private var zoom = 1.0
     
     var body: some View {
         GeometryReader { p in
@@ -26,7 +25,6 @@ struct ImageSliderV: View {
                             .scaledToFill()
                             .modifier(ImageModifier(contentSize: CGSize(width: p.size.width, height: p.size.height)))
                     }
-                    
                    
                 }
             }

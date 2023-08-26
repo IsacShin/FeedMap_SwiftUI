@@ -64,7 +64,6 @@ struct FeedListV: View {
                     }
                     
                     AdmobV()
-                    
                 }
 
                 if isLoading {
@@ -195,7 +194,10 @@ extension FeedListV {
 
 @ViewBuilder func AdmobV() -> some View {
     // admob
-    GADBanner().frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
+    let bannerWidth = UIScreen.main.bounds.width
+    let bannerSize = GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(bannerWidth)
+    GADBanner().frame(width: bannerWidth, height: bannerSize.size.height)
+
 }
 
 struct FeedListV_Previews: PreviewProvider {

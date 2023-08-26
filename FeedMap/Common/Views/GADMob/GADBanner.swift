@@ -13,7 +13,11 @@ import SwiftUI
 struct GADBanner: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        let view = GADBannerView(adSize: GADAdSizeBanner)
+        let bannerWidth = UIScreen.main.bounds.width
+        let bannerSize = GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(bannerWidth)
+        let adSize = GADAdSizeFromCGSize(CGSize(width: bannerWidth, height: bannerSize.size.height))
+
+        let view = GADBannerView(adSize: adSize)
         let viewController = UIViewController()
         #if DEBUG
         view.adUnitID = TEST_BANNER_ADMOBKEY // test Key
