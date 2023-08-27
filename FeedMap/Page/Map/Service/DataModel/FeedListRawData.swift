@@ -11,7 +11,7 @@ struct FeedListRawData: Codable {
     var list: [FeedRawData]?
 }
 
-struct FeedRawData: Codable, Identifiable {
+struct FeedRawData: Codable, Identifiable, Hashable {
     var uId = UUID()
     var id : Int?
     var title: String?
